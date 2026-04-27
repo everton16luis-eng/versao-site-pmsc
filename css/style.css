@@ -1,8 +1,8 @@
 /*Varáveis*/
 
 :root {
-    --primary: #D7042B;
-    --primary-hover: #98140B;
+    --primary: #0D2038;
+    --primary-hover: #092d58;
 
     --bg-main: #f9f9f9;
     --bg-alt: #f3f4f6;
@@ -22,7 +22,10 @@
     box-sizing: border-box;
 }
 .logo img{
-    width: 250px;
+    width: 125px;
+}
+.logo1{
+    filter: grayscale(100%) contrast(1.2);
 }
 html {
     scroll-behavior: smooth;
@@ -68,7 +71,6 @@ ul {
 
 main {
     padding-top: 135px;
-    /* background-color: red; */
 }
 a i{
     font-size: large;
@@ -146,7 +148,7 @@ a i{
     width: 50px;
     height: 45px;
     flex-direction: column;
-    background: green;
+    background: var(--primary-hover);
     border: none;
     font-size: 1.5rem;
     color: #ffffff;
@@ -382,7 +384,7 @@ text-align: justify;
     gap: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--primary-hover);
 }
 .card-noticia h2{
     line-height: 25px;
@@ -482,8 +484,6 @@ text-align: justify;
     z-index: 2;
     color: #fff;
     height: 100%;
-    /* border: 1px solid red; */
-    /* max-width: 800px; */
 }
 
 .carousel-content h1{
@@ -607,6 +607,12 @@ text-align: justify;
     .card-noticia img{
         width: 50%;
         height: 100%;
+    }
+}
+
+@media(max-width :400px){
+     header{
+        width: 100%;
     }
 }
 
