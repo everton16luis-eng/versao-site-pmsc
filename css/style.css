@@ -10,11 +10,29 @@
 
     --text-main: #111827;
     --text-muted: #6b7280;
+    --text-tag: #111827;
 
     --border: #e5e7eb;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
     --radius: 8px;
 }
+
+body.dark-mode{
+    --primary: #b30101;
+    --primary-hover: #800e0e;
+
+    --bg-main: #0f172a;
+    --bg-alt: #1e293b;
+    --surface: #1e293b;
+
+    --text-main: #6b7280;
+    --text-muted: #94a3b8;
+    --text-tag: #800e0e;
+
+    --border: #334155;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+}   
+
 
 * {
     margin: 0;
@@ -100,6 +118,30 @@ a i{
     display: flex;
     gap: 10px;
 }
+.nav-list button{
+    border: none;
+}
+.nav-list button:hover{
+    cursor: pointer;
+}
+
+.nav-list button i{
+    font-size: 30px;
+    /* background-color: #092d58; */
+    /* color: white; */
+}
+
+.nav-list-footer{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-list-footer i{
+    color: white;
+}
+.text-footer{
+    color: white;
+}
 
 .nav-link {
     font-weight: 500;
@@ -184,8 +226,33 @@ a i{
 }
 
 footer{
-    background-color: #111827;
-    height: 400px;
+    background-color: var(--primary-hover);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 175px;
+}
+.app{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    
+}
+.social-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu-btn {
@@ -412,7 +479,7 @@ text-align: justify;
 .mais-vistos{
     display: inline-block;
     margin-top: 15px;
-    background-color: #ffffff;
+    background-color: var(--bg-main);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
     flex-direction: column;
     padding: 0px 15px 0px 15px ;
@@ -429,6 +496,15 @@ text-align: justify;
 .card-mais-vistos h4{
     margin-top: 5px;
 }
+
+/* .card-mais-vistos p{
+    color: var(--text-main);
+}
+
+.mais-vistos h3{
+    color: var(--text-tag);
+} */
+
 .card-mais-vistos h4:hover{
     cursor: pointer;
     color: var(--primary-hover);
@@ -469,7 +545,7 @@ text-align: justify;
     display: flex;
     align-items: center;
     height: 25px;
-    background-color: #e7e7ea;
+    background-color: var(--bg-alt);
     color: gray;
     border-radius: 3px;
     font-size: 13px;
