@@ -5,6 +5,7 @@
     --primary-hover: #092d58;
 
     --bg-main: #f9f9f9;
+    --bg-header: #fff;  
     --bg-alt: #f3f4f6;
     --surface: #fff;
 
@@ -22,6 +23,7 @@ body.dark-mode{
     --primary-hover: #800e0e;
 
     --bg-main: #0f172a;
+    --bg-header: #1e293b;
     --bg-alt: #1e293b;
     --surface: #1e293b;
 
@@ -76,7 +78,7 @@ ul {
 
 /*Estilo do cabeçalho*/
 .header {
-    background-color: #ffffff;
+    background-color: var(--bg-header);
     border-bottom: 1px solid var(--border);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
     position: fixed;
